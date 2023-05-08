@@ -12,7 +12,6 @@ pipeline {
         // sh 'npm ci'
         // sh "npm run test:ci:record"
         sh 'npm install'
-        sh 'npx cypress run --browser chrome --reporter mochawesome'
         sh 'npx cypress run'
       }
     }
